@@ -1,6 +1,4 @@
-/* ------------------------ */
-/* RESET + VARIABLES        */
-/* ------------------------ */
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,18 +22,14 @@
     line-height: 1.6;
   }
    
-  /* ------------------------ */
-  /* CONTAINER UTILITY        */
-  /* ------------------------ */
+ 
   .container {
     max-width: var(--container-width);
     margin: 0 auto;
     padding: 0 1rem;
   }
    
-  /* ------------------------ */
-  /* HEADER / NAVBAR          */
-  /* ------------------------ */
+
   .header {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -72,11 +66,9 @@
     border-radius: 4px;
   }
    
-  /* ------------------------ */
-  /* BANNER                   */
-  /* ------------------------ */
+ 
   .banner {
-    background-image: url("../images/banner.jpg");
+    background-image: url("../img/banner-background.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -105,9 +97,7 @@
     margin: 0 0.5rem;
   }
    
-  /* ------------------------ */
-  /* BOTONES                  */
-  /* ------------------------ */
+
   .btn {
     padding: 0.75rem 1.5rem;
     border: none;
@@ -142,9 +132,7 @@
     padding: 0.5rem;
   }
    
-  /* ------------------------ */
-  /* SECCIONES DE CARDS       */
-  /* ------------------------ */
+
   .cards {
     display: grid;
     gap: 2rem;
@@ -196,9 +184,7 @@
     margin-bottom: 1rem;
   }
    
-  /* ------------------------ */
-  /* VISA SECTION             */
-  /* ------------------------ */
+
   .visa-section {
     background: #f5f5f5;
     padding: 3rem 0;
@@ -225,9 +211,7 @@
     margin-bottom: 1rem;
   }
    
-  /* ------------------------ */
-  /* FOOTER                   */
-  /* ------------------------ */
+
   .footer {
     background: #000;
     color: white;
