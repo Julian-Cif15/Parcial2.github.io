@@ -1,4 +1,3 @@
-
 *::after {
   box-sizing: border-box;
   margin: 0;
@@ -14,7 +13,7 @@
   --gray-light: #f5f5f5;
   --font-family: 'Arial', sans-serif;
   --spacing: 1rem;
-  --container-width: 1200px;
+  --container-width: 100%;
 }
 
 body {
@@ -22,7 +21,7 @@ body {
   color: var(--text-color);
   background-color: #d4d4d4;
   line-height: 1.6;
-
+  margin: 0%;
 }
 
 .container {
@@ -31,9 +30,20 @@ body {
   padding: 0 1rem;
 }
 
+.container2 {
+  max-width: var(--container-width);
+  padding: 5%;
+  text-align: left;
+}
+
+.container2 img {
+  height: 200px;
+  width: 450px;
+}
+
 .header {
   background-color: var(--bg-light);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar {
@@ -47,6 +57,7 @@ body {
   display: flex;
   list-style: none;
   gap: 1.5rem;
+  text-align: left;
 }
 
 .navbar__menu a {
@@ -62,7 +73,7 @@ body {
   gap: 0.75rem;
 }
 
-.navbar__actions a{
+.navbar__actions a {
   color: #000;
   text-decoration: none;
 }
@@ -77,14 +88,13 @@ body {
   background-image: url("../img/banner-background.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 80vh;
+  height: 90vh;
+  margin: 0%;
   color: white;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: 2rem;
+
 }
 
 .banner__content {
@@ -116,21 +126,36 @@ body {
   transition: all 0.3s ease;
 }
 
+.contenedorbotton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 300px;
+  padding: 8px 70px;
+  font-size: 14px;
+}
+
 .btn--primary {
   background-color: var(--primary-color);
-  color: white;
+  border-radius: 20px;
+  color: rgb(0, 0, 0);
 }
 
 .btn--secondary {
   background-color: transparent;
   border: 2px solid white;
+  border-radius: 20px;
   color: white;
 }
 
 .btn--tertiary {
-  background-color: #000;
+  background-color: #a045c4;
   color: white;
-  font-size: 0.9rem;
+  border-radius: 20px;
+  width: 300px;
+  padding: 15px 80px;
+  font-size: 14px;
+  
 }
 
 .btn--text {
@@ -147,10 +172,11 @@ body {
   font-weight: bold;
   padding: 0.5rem;
 }
+
 .cards {
   display: grid;
   gap: 2rem;
-  margin: 3rem 0;
+
 }
 
 .cards--shop {
@@ -160,7 +186,7 @@ body {
 }
 
 
-.cards--disneyplus h2{
+.cards--disneyplus h2 {
   vertical-align: top;
   color: #fff;
   text-align: center;
@@ -171,23 +197,25 @@ body {
   background-color: #d4d4d4;
 }
 
-.cards--parks h2{
+.cards--parks h2 {
   text-align: center;
   vertical-align: top;
   color: #000;
 }
-.cards__grid3{
+
+.cards__grid3 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background-color: #d4d4d4;
   padding: 2rem 1rem;
   gap: 2rem;
 }
-.cards--disneyplus{
+
+.cards--disneyplus {
   background-color: #004a61e8;
 }
 
-.cards__grid1{
+.cards__grid1 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   padding: 3rem 1rem;
@@ -197,51 +225,87 @@ body {
 
 .card2 {
   background: #004a61e8;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   overflow: hidden;
   border-radius: 8px;
   transition: transform 0.3s;
   text-align: center;
 }
 
-.cards--coming h2{
+.cards--coming h2 {
   text-align: center;
   margin-bottom: 2rem;
+
 }
 
-.cards__grid{
+.cards__grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.5rem;
   background-color: #d4d4d4;
+  padding: 2rem 1rem;
+  text-align: center;
 }
+
 .card {
-  background: #d4d4d4;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background-color: #f5c33b;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s;
 }
-.card1{
-background: #ffffff;
-box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-border-radius: 8px;
-overflow: hidden;
-transition: transform 0.3s;
-text-align: center;
+
+.card3 {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.card1 {
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s;
+  text-align: center;
 }
 
 .card:hover {
   transform: translateY(-5px);
 }
 
+.card2:hover {
+  transform: translateY(-5px);
+}
+
+.card3:hover {
+  transform: translateY(-5px);
+}
+
 .card img {
   width: 100%;
-  display: block;
+  display: flex;
+}
+
+.card1 img {
+  width: 100%;
+  display: flex;
+}
+
+.card2 img {
+  width: 100%;
+  display: flex;
+}
+
+.card3 img {
+  width: 100%;
+  display: flex;
 }
 
 .card__content1 {
   padding: 1rem;
-  background-color:  #fad15f;
+  background-color: #f5c33b;
   text-align: center;
 }
 
@@ -272,15 +336,25 @@ text-align: center;
 
 .visa-section {
   background: var(--gray-light);
-  padding: 3rem 0;
+
 }
 
 .visa-content {
+  background-image: url("../img/more-background.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  margin: 0%;
+  color: rgb(41, 97, 219);
+  display: block;
   display: flex;
   gap: 2rem;
   align-items: center;
+  text-align: center;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: right;
+  padding-right: 200px;
+  
 }
 
 .visa__cards img {
@@ -296,9 +370,13 @@ text-align: center;
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
+.tachado {
+  text-decoration: line-through;
+}
+
 
 .footer {
-  background:#fff;
+  background: #fff;
   color: rgb(255, 255, 255);
   padding: 2rem 1rem;
   text-align: center;
@@ -321,7 +399,7 @@ text-align: center;
 .footer__links ul {
   list-style: none;
   padding: 0;
-  color:#000
+  color: #000
 }
 
 .footer__links a {
@@ -329,6 +407,7 @@ text-align: center;
   text-decoration: none;
   font-size: 0.9rem;
 }
+
 .footer__links1 {
   display: flex;
   gap: 2rem;
@@ -341,7 +420,7 @@ text-align: center;
 .footer__links1 ul {
   list-style: none;
   padding: 0;
-  color:#000
+  color: #000
 }
 
 .footer__links1 a {
@@ -349,6 +428,7 @@ text-align: center;
   text-decoration: none;
   font-size: 0.9rem;
 }
+
 .footer__copy {
   font-size: 0.8rem;
   margin-top: 1rem;
